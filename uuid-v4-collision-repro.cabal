@@ -1,0 +1,33 @@
+name:                uuid-v4-collision-repro
+version:             0.1.0.0
+synopsis:            Initial project template from stack
+description:         Please see README.md
+homepage:            http://github.com/mgsloan/uuid-v4-collision-repro#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Michael Sloan
+maintainer:          mgsloan@gmail.com
+copyright:           2015 Michael Sloan
+category:            Web
+build-type:          Simple
+-- extra-source-files:
+cabal-version:       >=1.10
+
+executable uuid-v4-collision-repro-exe
+  hs-source-dirs:      app
+  main-is:             Main.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base, uuid
+  default-language:    Haskell2010
+
+executable uuid-v4-collision-repro-exe-2
+  hs-source-dirs:      app
+  main-is:             Main2.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base, process
+  default-language:    Haskell2010
+
+
+source-repository head
+  type:     git
+  location: https://github.com/mgsloan/uuid-v4-collision-repro
